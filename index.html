@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>caveman</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="jquery-3.1.1.min.js" type="application/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="intro">
+        <div>
+            <p class="ready">Gotowy na przygodę?</p>
+        </div>
+        <div>
+            <button id="yes">Tak</button>
+            <button id="no">Nie</button>
+        </div>
+    </div>
+    <div id="intro2" class="image" style="background-image: url(./images/Miszcze.jpg)">
+        <div class="intro2">
+            <div>
+                <p class="ready">Naprawdę??? Może jednak wybierzesz się z nami do jaskini?</p>
+            </div>
+            <div>
+                <button id="yes2">Tak</button>
+                <button id="no2">Nie</button>
+            </div>
+        </div>
+    </div>
+    <div id="intro3">
+        <div class="image image3" style="background-image: url(./images/pingwin.png)"></div>
+        <div class="intro3">
+            <p class="ready">To Twoja ostatnia szansa. Ze mną chyba pójdziesz?</p>
+            <button id="yes3">Tak</button>
+            <button id="no3">tak</button>
+        </div>
+    </div>
+    <div id="start">
+        <div class="image image3" style="background-image: url(./images/pingwin.png)"></div>
+        <div class="intro4">
+            <p class="ready">HURRA!!!<br><br> IDZIEMY RAZEM DO JASKINI!!!<br><br>Teraz czas się przygotować.<br><br>Gdy klikniesz, pojawi się okno. Pobierz z regału worek, do którego będziesz pakował sprzęt. Gdy będziesz miał już worek musisz wybrać elementy stoju oraz sprzęt niezbędny do pójścia do jaskini.<br> Zwróć uwagę na poprawną kolejność nakładania na siebie poszczególnych elementów.</p>
+        </div>
+    </div>
+    <div id="stop">
+        <div class="image image3" style="background-image: url(./images/pingwin.png)"></div>
+        <div class="stop">
+            <p>Gratulacje!!<br><br> Jesteś już prawie przygotowany. Widzę, że ubrałeś się i zabrałeś większość potrzebnych rzeczy. Znakomicie!<br><br>Przed wyjściem do jaskini spotkajmy się jeszcze z bardziej doświadzonymi grotołazami.<br><br>Spotkajmy się we wtorek o 19:30 w siedzibie speleoklubu:<br><br>Adres: 50 lok nr 80, Chełmska, <br> 00-725 Warszawa
+            </p>
+        </div>
+    </div>
+    <div id="end">
+        <div class="end image-end">
+            <p>Ludzika zaprojektowała i wykonała<br><br>(przy użyciu HTML5, CSS, JS, JQ)<br><br>Joanna Wolańska.<br><br><br>Kontakt: joannawolanska@gmail.com
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <section class="rel">
+            <div id="bag"></div>
+            <div class="cave-bag-elements bag-table"></div>
+        </section>
+
+        <section class="body-back">
+            <div class="caveman">
+                <div class="caveman-head">
+                    <div class="caveman-helmet">
+                        <div class="light"></div>
+                    </div>
+                    <div class="caveman-face">
+                        <div class="mouth"></div>
+                    </div>
+                </div>
+                <div class="caveman-arms"></div>
+                <div class="caveman-middle">
+                    <div class="caveman-arm">
+                        <div class="caveman-hand">
+                            <div class="hand-rope"></div>
+                        </div>
+                    </div>
+                    <div class="caveman-body"></div>
+                    <div class="caveman-arm">
+                        <div class="caveman-hand">
+                            <div class="hand-bag"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="caveman-harness">
+                    <div class="ring">
+                        <div class="ring-croll"></div>
+                        <div class="ring-simple"></div>
+                    </div>
+                    <div class="ring-left">
+                        <div class="ring-poigne"></div>
+                    </div>
+                    <div class="ring-right">
+                        <div class="ring-shunt"></div>
+                    </div>
+
+                </div>
+                <div class="caveman-body-down">
+                    <div class="caveman-body-down-normal"></div>
+                    <div class="caveman-body-down-lonz"></div>
+                    <div class="caveman-body-down-normal1"></div>
+                    <div class="caveman-body-down-stopka"></div>
+                    <div class="caveman-body-down-normal1"></div>
+                    <div class="caveman-body-down-uprzaz"></div>
+                    <div class="caveman-body-down-normal2"></div>
+                    <div class="caveman-body-down-uprzaz"></div>
+                    <div class="caveman-body-down-normal3"></div>
+                    <div class="caveman-body-down-lonz"></div>
+                    <div class="caveman-body-down-normal"></div>
+                </div>
+                <div class="caveman-legs">
+                    <div class="caveman-left-leg">
+                        <div class="caveman-leg-top ">
+                            <div class="caveman-leg-normal"></div>
+                            <div class="caveman-body-down-stopka"></div>
+                            <div class="caveman-leg-normal1"></div>
+                        </div>
+                        <div class="caveman-thigh">
+                            <div class="caveman-leg-normal"></div>
+                            <div class="caveman-body-down-stopka"></div>
+                            <div class="caveman-leg-normal1"></div>
+                        </div>
+                        <div class="caveman-shoe-top">
+                            <div class="caveman-leg-normal"></div>
+                            <div class="caveman-body-down-stopka"></div>
+                            <div class="caveman-leg-normal1"></div>
+                        </div>
+                        <div class="caveman-shoe-left"></div>
+                    </div>
+                    <div class="caveman-right-leg">
+                        <div class="caveman-leg-top "></div>
+                        <div class="caveman-thigh"></div>
+                        <div class="caveman-shoe-top"></div>
+                        <div class="caveman-shoe-right"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="alert-helmet" class="alert">Zanim założysz kask, nałóż czapkę.</div>
+            <div id="alert-comb" class="alert">Przecież nie chcesz zmarznąć w jaskini?Proszę załóż polarowe wnętrze zanim ubierzerz kombinezon.</div>
+            <div id="alert-mtde" class="alert">Zanim założysz uprząż, musisz założyć kombinezon.</div>
+            <div id="alert-croll" class="alert">Zanim wybierzesz crolla pobierz ogniwo.</div>
+            <div id="alert-socks" class="alert">Załóż skarpetki.</div>
+            <div id="alert-light" class="alert">Główną latarkę musisz przymocować do kasku. Najpierw wybierz kask.</div>
+            <div id="alert-ring" class="alert">Ogniwo założysz do uprzęży.</div>
+            <div id="alert-lonz" class="alert">Lonże mocujesz do ogniwa.</div>
+            <div id="alert-owal" class="alert">2 z pobranych karabinków musisz zamocować na lonżach.</div>
+            <div id="alert-poigne" class="alert">Aby przymocować poignee musisz mieć w lonży karabinek.</div>
+            <div id="alert-shunt" class="alert">Aby przymocować shunta musisz mieć w lonży karabinek.</div>
+            <div id="alert-simple" class="alert">Simple przymocuj do ogniwa.</div>
+            <div id="alert-shoes" class="alert">Zanim założysz kalosze, załóż kombinezon.</div>
+            <div id="alert-shoes1" class="alert">Zanim założysz kalosze, załóż skarpetki oraz kombinezon.</div>
+            <div id="alert-stopka" class="alert">Żeby zamocować stopkę, musisz mieć założoną uprząż.</div>
+        </section>
+
+        <section class="equipment">
+            <div class="cave-bag-contener cave-bag"></div>
+            <div class="stand">
+                <table>
+                    <tr class="shelf">
+                        <td class="small-bag">
+                            <p>Podręczny woreczek na sprzęt.</p>
+                        </td>
+                        <td class="socks">
+                            <p>Skarpetki. Zwykłe, ale jeszcze lepiej neoprenowe.</p>
+                        </td>
+                        <td class="underclothes">
+                            <p>Polarowe wnętrze</p>
+                        </td>
+                        <td class="comb">
+                            <p>Kombinezon</p>
+                        </td>
+                        <td class="cap">
+                            <p>Czapka</p>
+                        </td>
+                    </tr>
+                    <tr class="shelf">
+                        <td class="helmet">
+                            <p>Kask</p>
+                        </td>
+                        <td class="gloves">
+                            <p>Rękawiczki</p>
+                        </td>
+                        <td class="shoes">
+                            <p>Kalosze</p>
+                        </td>
+                        <td class="mtde">
+                            <p>Uprząż</p>
+                        </td>
+                        <td class="poigne">
+                            <p>Poignee</p>
+                        </td>
+                    </tr>
+                    <tr class="shelf">
+                        <td class="croll">
+                            <p>Croll</p>
+                        </td>
+                        <td class="simple">
+                            <p>Simple</p>
+                        </td>
+                        <td class="shunt">
+                            <p>Shunt</p>
+                        </td>
+                        <td class="lonza">
+                            <p>Lonże</p>
+                        </td>
+                        <td class="stopka">
+                            <p>Stopka</p>
+                        </td>
+                    </tr>
+                    <tr class="shelf">
+                        <td class="ogniwo">
+                            <p>Ogniwo</p>
+                        </td>
+                        <td class="owal1">
+                            <p>Karabinki owalne</p>
+                            <table>
+                                <tr>
+                                    <td class="small owal"></td>
+                                    <td class="small owal"></td>
+                                    <td class="small owal"></td>
+                                    <td class="small owal"></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="latarka">
+                            <p>Latarka głóna</p>
+                        </td>
+                        <td class="latarka2">
+                            <p>Latarka</p>
+                        </td>
+                        <td class="pantine">
+                            <p>Pantine</p>
+                        </td>
+                    </tr>
+                    <tr class="shelf">
+                        <td class="nrc">
+                            <p>Folia NRC</p>
+                        </td>
+                        <td class="szkic">
+                            <p>Szkic jaskini</p>
+                        </td>
+                        <td class="rope">
+                            <p>Lina</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pinguin" style="background-image: url(./images/pingwin.png)"></div>
+        </section>
+        <div class="info"></div>
+    </main>
+
+    <footer class="footer">
+        <p>Caveman&copy. Created by Joanna Wolańska.</p>
+    </footer>
+
+    <script type="text/JavaScript" src="js/kalk.js"></script>
+</body>
+
+</html>
